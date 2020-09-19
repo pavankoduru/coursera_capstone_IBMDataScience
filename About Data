@@ -1,0 +1,15 @@
+#About Data
+The data was collected by the Seattle Police Department and Accident Traffic Records Department from 2004 to present.
+The data consists of 37 independent variables and 194,673 rows. The dependent variable, “SEVERITYCODE”, contains numbers that correspond  to different levels of severity caused by an accident from 0 to 4.
+Severity codes are as follows:
+0: Little to no Probability (Clear Conditions)
+1: Very Low Probability — Chance or Property Damage
+2: Low Probability — Chance of Injury
+3: Mild Probability — Chance of Serious Injury
+4: High Probability — Chance of Fatality
+Here there are some null values in the given dataset and Inconstitency in some columns. So dataset need to be preprocessed before going to further steps
+
+#About Data preprocessing
+The dataset in the original form is not ready for data analysis. In order to prepare the data, first, we need to drop the non-relevant columns. In addition, most of the features are of object data types that need to be converted into numerical data types.
+After analyzing the data set, I have decided to focus on only four features, severity, weather conditions, road conditions, and light conditions, among others.
+To get a good understanding of the dataset, I have checked different values in the features. The results show, the target feature is imbalance, so we use a simple statistical technique to balance it.
